@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
 
 /* CSS Document */
 
@@ -59,7 +61,7 @@
 General css class
 -----------------------------------*/
 
-body { font-size: 15px; font-family: 'Poppins', sans-serif; line-height: 1.4; color: #778191; background-color: #f4f6f8; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-size: 15px; font-family: Nunito, sans-serif; line-height: 1.4; color: #778191; background-color: #f4f6f8; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 h1, h2, h3, h4, h5, h6 { margin: 0px 0px 10px 0px; color: #3c4d6b; font-weight: 500; }
 h1 { font-size: 32px; line-height: 44px; letter-spacing: -1px; }
 h2 { font-size: 24px; line-height: 32px; }
@@ -234,8 +236,16 @@ Buttons
 ------------------------------------------*/
 
 .btn { font-size: 14px; border-radius: 2px; line-height: 12px; letter-spacing: 1px; text-transform: uppercase; padding: 20px 30px; border: none; font-weight: 600; }
-.btn-default { background-color: #f51f8a; color: #fff; border-color: #f51f8a; }
-.btn-default:hover { color: #fff; background-color: #ff389c; border-color: #ff389c; }
+.btn-default {
+    background-color: #00AC0E;
+    color: #fff;
+    border-color: #f51f8a;
+}
+.btn-default:hover {
+    color: #fff;
+    background-color: #FF6D22;
+    border-color: #ff389c;
+}
 .btn-default.focus, .btn-default:focus { color: #fff; background-color: #d5504f; border-color: #c64241; }
 .btn-primary { background-color: #15549a; color: #fff; }
 .btn-primary:hover { color: #fff; background-color: #2573cb; }
@@ -327,7 +337,9 @@ top bar
 .search-area { padding: 30px; }
 .header { background-color: #fff; padding-top: 20px; padding-bottom: 20px; position: relative; z-index: 99; -webkit-box-shadow: 0px 5px 9px 1px rgba(144, 161, 180, 0.2); box-shadow: 0px 5px 9px 1px rgba(144, 161, 180, 0.2); -moz-box-shadow: 0px 5px 9px 1px rgba(144, 161, 180, 0.2); }
 .logo { }
-.navigation-wide { background-color: #15549a }
+.navigation-wide {
+    background-color: #1FFF24
+}
 .navigation-wide #navigation { margin-top: 0px; float: left; background-color: #15549a; }
 #navigation, #navigation ul, #navigation ul li, #navigation ul li a, #navigation #menu-button { margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 #navigation:after, #navigation>ul:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
@@ -345,7 +357,12 @@ top bar
 /*#navigation > ul > li.has-sub > a:after {position: absolute; top: 22px; right: 11px; width: 8px; height: 2px;
 display: block; background: #dddddd; content: '';}*/
 #navigation>ul>li.has-sub>a:before { position: absolute; right: 14px; font-family: FontAwesome; content: "\f107"; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
-#navigation ul ul li a .badge { font-size: 10px; background: #f51f8a; padding: 1px 7px; color: #fff; }
+#navigation ul ul li a .badge {
+    font-size: 10px;
+    background-color: #009703;
+    padding: 1px 7px;
+    color: #fff;
+}
 
 /*#navigation > ul > li.has-sub:hover > a:before {top: 23px; height: 0;}*/
 #navigation ul ul { position: absolute; left: -9999px; }
@@ -686,7 +703,12 @@ compare Student loan table
 .post-caption-img img { border-radius: 3px; }
 .post-caption-content { position: absolute; bottom: 0px; padding: 27px; }
 .post-caption-block .meta { text-transform: capitalize; }
-.cta-section-app { background: url(../images/cta-img-4.jpg)no-repeat; background-size: cover; background-position-x: 50%; }
+.cta-section-app {
+    background-repeat: no-repeat;
+    background-image: url(../images/cta-img-4.png);
+    background-size: cover;
+    background-position-x: 50%;
+}
 
 
 /*---------------------------------------------------
